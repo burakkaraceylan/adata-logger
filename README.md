@@ -2,13 +2,15 @@
 
 ## What is this?
 
-This is a docker container with rsyslog installed and listening on 514. UDP port for receiving remote logs. Every night at 2.00 am the logs are signed with a timestamp server, archived and sent to a remote FTP server (ie. a NAS). Logs coming from docker host (172.17.0.1) are signed and archived by default. Logs from other ip addresses can be seperated by providing additional configurations. Container is based on Alpine linux and the size is just over 20 mb.
+This is a docker container with rsyslog installed and listening on 514. UDP port for receiving remote logs. Every night at 2.00 am the logs are signed with a timestamp server, archived and sent to a remote FTP server (ie. a NAS). Logs coming from docker host (172.17.0.1) are signed and archived by default. Logs from other ip addresses can be seperated by providing additional configurations. Container is based on Alpine linux and the size is around 15 mb.
 
 ## But why?
 
 Mikrotik added container support to their devices. This opened up many opportunities. In some countries it is mandatory to sign and store firewall logs for a certain amount of time. Usually a central server collects, signs and stores the logs. This single point of failure creates many problems and therefore I wanted to explore the feasibility of delegating the task of logging to the devices that are actualy creating the logs.
 
 ## So how?
+
+    docker pull bkaraceylan/adata-logger
 
 The process of running a container inside RouterOS is described in detail [here](https://help.mikrotik.com/docs/display/ROS/Container).
 
