@@ -21,6 +21,7 @@ The process of running a container inside RouterOS is described in detail [here]
 - TS_SERVER is the url for the timestamp server (without the http:// part)
 - TS_USER is the username for the timestamp server
 - TS_PASS is the password for the timestamp server
+- LOG_NAME is the name of the file that stores the logs coming from the docker host (172.17.0.1)
 
 ### Volumes
 
