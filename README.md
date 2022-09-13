@@ -6,7 +6,7 @@ This is a docker container with rsyslog installed and listening on 514. UDP port
 
 ## But why?
 
-Mikrotik added container support to their devices. This opened up many opportunities. In some countries it is mandatory to sign and store firewall logs for a certain amount of time. Usually a central server collects, signs and stores the logs. This single point of failure creates many problems and therefore I wanted to explore the feasibility of delegating the task of logging to the devices that are actualy creating the logs.
+Mikrotik added container support to their devices. This opened up many opportunities. In some countries it is mandatory to sign and store firewall logs for a certain amount of time. Usually a central server collects, signs and stores the logs. This creates many problems and therefore I wanted to explore the feasibility of delegating the task of logging to the devices that are actualy creating the logs.
 
 ## So how?
 
